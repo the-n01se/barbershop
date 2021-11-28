@@ -15,7 +15,7 @@
 
 <body>
 
-  <header id="header" class="h-screen">
+  <header id="header" class="h-screen mb-28">
     <div class="container mx-auto px-4">
       <nav class="header__menu flex items-center p-4">
         <a href="#header" class="header__logo-link">
@@ -37,21 +37,71 @@
         </ul>
       </nav>
     </div>
-    <div class="header__content bg-auto bg-right-top bg-no-repeat h-full" style="background-image: url(./images/header.png);">
+    <div class="header__content bg-auto bg-right-top bg-no-repeat h-full"
+      style="background-image: url(./images/header.png);">
       <div class="container mx-auto px-4">
-        <div class="header__titles w-2/5 pt-20">
-          <h1 class="header__title text-6xl font-bold text-blue-900 pb-10"><span
+        <div class="header__titles w-2/5 pt-44">
+          <h1 class="header__title text-4xl font-bold text-blue-900 pb-10"><span
               class="text-yellow-400">Hairstyle</span> Reflects The Personality
             Inside You</h1>
-          <p class="header__text font-normal text-gray-400 w-4/5 text-lg pb-24">It is a long established fact that a
+          <p class="header__text font-medium text-gray-400 w-4/5 text-lg pb-24">It is a long established fact that a
             reader will be distracted by the readable content
             of a page when looking at.</p>
-          <a href="#" class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
+          <a href="#"
+            class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
             style="box-shadow: 0px 0px 100px 10px rgba(147, 197, 253, 1);">Get Started</a>
         </div>
       </div>
     </div>
   </header>
+
+  <section class="history">
+    <div class="container mx-auto px-4 mb-28">
+      <div class="history__content flex justify-between items-center">
+        <img class="history__image w-1/2 pr-32" src="/images/history.png" alt="history image">
+        <div class="histore__texts w-1/2">
+          <h4 class="history__title text-4xl font-bold text-blue-900 pb-10">Our <span
+              class="text-yellow-400">History</span></h4>
+          <p class="history__text font-medium text-gray-400 w-4/5 text-lg pb-5">It is a long established fact that a
+            reader will be distracted by the readable
+            content of a page when looking at.</p>
+          <p class="history__text font-medium text-gray-400 w-4/5 text-lg pb-20">It is a long established fact that a
+            reader will be distracted by the readable
+            content of a page when looking at.</p>
+          <a href="#"
+            class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
+            style="box-shadow: 0px 0px 100px 10px rgba(147, 197, 253, 1);">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="services">
+    <div class="container mx-auto px-4">
+      <h4 class="services__title text-4xl font-bold text-blue-900 pb-10 text-center">Services We <span
+          class="text-yellow-400">Provide</span></h4>
+      <div class="services__items">
+        <div class="services__item">
+          <img src="./images/services-1.png" alt="services image " class="services__item-image">
+          <h6 class="services__item-title">Hair Cut</h6>
+          <p class="services__item-text">long established fact that a reacted by the readable content of
+            hen looking at.</p>
+        </div>
+        <div class="services__item">
+          <img src="./images/services-2.png" alt="services image 2" class="services__item-image">
+          <h6 class="services__item-title">Beard Cut</h6>
+          <p class="services__item-text">long established fact that a reacted by the readable content of
+            hen looking at.</p>
+        </div>
+        <div class="services__item">
+          <img src="./images/services-3.png" alt="services image 3" class="services__item-image">
+          <h6 class="services__item-title">Facial Pack</h6>
+          <p class="services__item-text">long established fact that a reacted by the readable content of
+            hen looking at.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
