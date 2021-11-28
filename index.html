@@ -8,42 +8,47 @@
   <title>Barbershop</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
 </head>
 
 <body>
 
-  <header id="header">
-    <div class="xl:container xl:mx-auto px-4">
-      <nav class="header__menu flex">
+  <header id="header" class="h-screen">
+    <div class="container mx-auto px-4">
+      <nav class="header__menu flex items-center p-4">
         <a href="#header" class="header__logo-link">
           <img src="./images/logo.svg" alt="header logo image" class="header__logo-image">
         </a>
-        <ul class="header__list">
+        <ul class="header__list flex w-full justify-center font-medium">
           <li class="header__list-item">
             <a href="#" class="header__list-link">Home</a>
           </li>
-          <li class="header__list-item">
+          <li class="header__list-item ml-4">
             <a href="" class="header__list-link">History</a>
           </li>
-          <li class="header__list-item">
+          <li class="header__list-item ml-4">
             <a href="" class="header__list-link">Service</a>
           </li>
-          <li class="header__list-item">
+          <li class="header__list-item ml-4">
             <a href="" class="header__list-link">Gallary</a>
           </li>
         </ul>
       </nav>
-      <div class="header__content">
-        <div class="header__titles">
-          <h1 class="header__title"><span>Hairstyle</span> Reflects The Personality Inside You</h1>
-          <p class="header__text">It is a long established fact that a reader will be distracted by the readable content
+    </div>
+    <div class="header__content bg-auto bg-right-top bg-no-repeat h-full" style="background-image: url(./images/header.png);">
+      <div class="container mx-auto px-4">
+        <div class="header__titles w-2/5 pt-20">
+          <h1 class="header__title text-6xl font-bold text-blue-900 pb-10"><span
+              class="text-yellow-400">Hairstyle</span> Reflects The Personality
+            Inside You</h1>
+          <p class="header__text font-normal text-gray-400 w-4/5 text-lg pb-24">It is a long established fact that a
+            reader will be distracted by the readable content
             of a page when looking at.</p>
-          <a href="#" class="header__button">Get Started</a>
+          <a href="#" class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
+            style="box-shadow: 0px 0px 100px 10px rgba(147, 197, 253, 1);">Get Started</a>
         </div>
-        <img src="./images/header.png" alt="header image background" class="header__image">
       </div>
     </div>
   </header>

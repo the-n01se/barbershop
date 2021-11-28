@@ -1,0 +1,11 @@
+.header__list-item {
+    padding: 0 10px;
+}
+
+.header__list-item:hover {
+    background-color: green;
+    height: inherit;
+}
+.header__list {
+    height: inherit;
+}
