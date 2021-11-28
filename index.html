@@ -1,21 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
+  <title>Barbershop</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/jquery.fancybox.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-  
+
+  <header id="header">
+    <div class="xl:container xl:mx-auto px-4">
+      <nav class="header__menu flex">
+        <a href="#header" class="header__logo-link">
+          <img src="./images/logo.svg" alt="header logo image" class="header__logo-image">
+        </a>
+        <ul class="header__list">
+          <li class="header__list-item">
+            <a href="#" class="header__list-link">Home</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">History</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Service</a>
+          </li>
+          <li class="header__list-item">
+            <a href="" class="header__list-link">Gallary</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__content">
+        <div class="header__titles">
+          <h1 class="header__title"><span>Hairstyle</span> Reflects The Personality Inside You</h1>
+          <p class="header__text">It is a long established fact that a reader will be distracted by the readable content
+            of a page when looking at.</p>
+          <a href="#" class="header__button">Get Started</a>
+        </div>
+        <img src="./images/header.png" alt="header image background" class="header__image">
+      </div>
+    </div>
+  </header>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/slick.min.js"></script>
   <script src="js/jquery.fancybox.min.js"></script>
   <script src="js/main.js"></script>
 </body>
+
 </html>
