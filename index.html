@@ -8,99 +8,93 @@
   <title>Barbershop</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/slick.css">
-  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
   <link rel="stylesheet" href="css/style.css">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&family=Outfit:wght@400;700&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
 
-  <header id="header" class="h-screen mb-28">
-    <div class="container mx-auto px-4">
-      <nav class="header__menu flex items-center p-4">
+  <header id="header" class="header">
+    <div class="container">
+      <nav class="header__menu">
         <a href="#header" class="header__logo-link">
           <img src="./images/logo.svg" alt="header logo image" class="header__logo-image">
         </a>
-        <ul class="header__list flex w-full justify-center font-medium">
+        <ul class="header__list">
           <li class="header__list-item">
-            <a href="#" class="header__list-link">Home</a>
+            <a href="#history" class="header__list-link">History</a>
           </li>
-          <li class="header__list-item ml-4">
-            <a href="" class="header__list-link">History</a>
+          <li class="header__list-item">
+            <a href="#services" class="header__list-link">Service</a>
           </li>
-          <li class="header__list-item ml-4">
-            <a href="" class="header__list-link">Service</a>
-          </li>
-          <li class="header__list-item ml-4">
-            <a href="" class="header__list-link">Gallery</a>
+          <li class="header__list-item">
+            <a href="#gallery" class="header__list-link">Gallery</a>
           </li>
         </ul>
       </nav>
     </div>
-    <div class="header__content bg-auto bg-right-top bg-no-repeat h-full">
-      <div class="container mx-auto px-4">
-        <div class="header__titles w-2/5 pt-44">
-          <h1 class="header__title text-4xl font-bold text-blue-900 pb-10"><span
-              class="text-yellow-400">Hairstyle</span> Reflects The Personality
+    <div class="header__content">
+      <div class="container">
+        <div class="header__titles">
+          <h1 class="header__title"><span>Hairstyle</span> Reflects The Personality
             Inside You</h1>
-          <p class="header__text font-medium text-gray-400 w-4/5 text-lg pb-24">It is a long established fact that a
+          <p class="header__text">It is a long established fact that a
             reader will be distracted by the readable content
             of a page when looking at.</p>
-          <a href="#"
-            class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
-            style="box-shadow: 0px 0px 100px 10px rgba(147, 197, 253, 1);">Get Started</a>
+          <a href="#" class="header__button" data-fancybox="dialog" data-src="#dialog-content">Get Started</a>
         </div>
       </div>
     </div>
   </header>
 
-  <section class="history">
-    <div class="container mx-auto px-4 mb-28">
-      <div class="history__content flex justify-between items-center">
-        <img class="history__image w-1/2 pr-32" src="/images/history.png" alt="history image">
-        <div class="histore__texts w-1/2">
-          <h4 class="history__title text-4xl font-bold text-blue-900 pb-10">Our <span
-              class="text-yellow-400">History</span></h4>
-          <p class="history__text font-medium text-gray-400 w-4/5 text-lg pb-5">It is a long established fact that a
-            reader will be distracted by the readable
-            content of a page when looking at.</p>
-          <p class="history__text font-medium text-gray-400 w-4/5 text-lg pb-20">It is a long established fact that a
-            reader will be distracted by the readable
-            content of a page when looking at.</p>
-          <a href="#"
-            class="header__button px-16 py-5 bg-blue-300 text-white font-bold rounded-lg hover:border-current hover:border hover:bg-transparent hover:text-blue-300 duration-500"
-            style="box-shadow: 0px 0px 100px 10px rgba(147, 197, 253, 1);">Learn more</a>
+  <section class="history" id="history">
+    <div class="container">
+      <div class="history__content">
+        <div class="histore__texts">
+          <h4 class="history__title">Our <span>History</span></h4>
+          <p class="history__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quo, saepe
+            exercitationem libero velit expedita voluptate? Totam ratione at incidunt cum hic expedita omnis tenetur?
+            Totam tempora voluptatum dignissimos esse.
+            Rerum delectus ex quidem ipsam doloremque, excepturi iure, eum quasi cumque quos vitae beatae iusto ipsum at
+            soluta dignissimos laudantium dolores, possimus adipisci voluptatum. Quod fugit voluptatum nulla officiis
+            blanditiis?</p>
+          <p class="history__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem quo, saepe
+            exercitationem libero velit expedita voluptate? Totam ratione at incidunt cum hic expedita omnis tenetur?
+            Totam tempora voluptatum dignissimos esse.
+            Rerum delectus ex quidem ipsam doloremque, excepturi iure, eum quasi cumque quos vitae beatae iusto ipsum at
+            soluta dignissimos laudantium dolores, possimus adipisci voluptatum. Quod fugit voluptatum nulla officiis
+            blanditiis?</p>
         </div>
       </div>
     </div>
   </section>
 
-  <section class="services mb-28">
-    <div class="container mx-auto px-4">
-      <h4 class="services__title text-4xl font-bold text-blue-900 pb-10 text-center">Services We <span
-          class="text-yellow-400">Provide</span></h4>
-      <div class="services__items flex flex-wrap justify-around mt-10">
-        <div
-          class="services__item w-80 bg-white mb-5 text-center text-white rounded-2xl shadow-md hover:bg-blue-500 hover:text-white duration-500">
-          <img src="./images/services-1.png" alt="services image 1" class="services__item-image mx-auto pt-16">
-          <h6 class="services__item-title font-bold pt-10 text-xl text-black">Hair Cut</h6>
-          <p class="services__item-text w-2/4 mx-auto pt-10 pb-16 text-gray-500">long established fact that a reacted by
+  <section class="services" id="services">
+    <div class="container">
+      <h4 class="services__title">Services We <span>Provide</span></h4>
+      <div class="services__items">
+        <div class="services__item">
+          <img src="./images/services-1.png" alt="services image 1" class="services__item-image">
+          <h6 class="services__item-title">Hair Cut</h6>
+          <p class="services__item-text">long established fact that a reacted by
             the readable content of
             hen looking at.</p>
         </div>
-        <div
-          class="services__item w-80 bg-white mb-5 mr-10 ml-10 text-center text-white rounded-2xl shadow-md hover:bg-blue-500 hover:text-white duration-500">
-          <img src="./images/services-2.png" alt="services image 2" class="services__item-image mx-auto pt-16">
-          <h6 class="services__item-title font-bold pt-10 text-xl text-black">Beard Cut</h6>
-          <p class="services__item-text w-2/4 mx-auto pt-10 pb-16 text-gray-500">long established fact that a reacted by
+        <div class="services__item">
+          <img src="./images/services-2.png" alt="services image 2" class="services__item-image">
+          <h6 class="services__item-title">Beard Cut</h6>
+          <p class="services__item-text">long established fact that a reacted by
             the readable content of
             hen looking at.</p>
         </div>
-        <div
-          class="services__item w-80 bg-white mb-5 text-center text-white rounded-2xl shadow-md hover:bg-blue-500 hover:text-white duration-500">
-          <img src="./images/services-3.png" alt="services image 3" class="services__item-image mx-auto  pt-16">
-          <h6 class="services__item-title font-bold pt-10 text-xl text-black">Facial Pack</h6>
-          <p class="services__item-text w-2/4 mx-auto pt-10 pb-16 text-gray-500">long established fact that a reacted by
+        <div class="services__item">
+          <img src="./images/services-3.png" alt="services image 3" class="services__item-image">
+          <h6 class="services__item-title">Facial Pack</h6>
+          <p class="services__item-text">long established fact that a reacted by
             the readable content of
             hen looking at.</p>
         </div>
@@ -108,34 +102,41 @@
     </div>
   </section>
 
-  <section class="gallery">
-    <div class="container mx-auto px-4">
-      <h4 class="gallery__title services__title text-4xl font-bold text-blue-900 pb-20 text-center">Our <span
-          class="text-yellow-400">Gallery</span>
-      </h4>
-      <div class="gallery__content flex justify-around flex-wrap">
-        <img src="./images/gallery-1.jpg" alt="gallery image 1" class="gallery__content-image w-96 pb-12">
-        <img src="./images/gallery-2.jpg" alt="gallery image 2" class="gallery__content-image w-96 pb-12">
-        <img src="./images/gallery-3.jpg" alt="gallery image 3" class="gallery__content-image w-96 pb-12">
-        <img src="./images/gallery-4.jpg" alt="gallery image 4" class="gallery__content-image w-96 pb-12">
-        <img src="./images/gallery-5.jpg" alt="gallery image 5" class="gallery__content-image w-96 pb-12">
-        <img src="./images/gallery-6.jpg" alt="gallery image 6" class="gallery__content-image w-96 pb-12">
+  <section class="gallery" id="gallery">
+    <div class="container">
+      <h4 class="gallery__title">Our <span>Gallery</span></h4>
+      <div class="gallery__content">
+        <img data-fancybox="gallery" data-sizes="(max-width: 600px) 480px, 800px" src="./images/gallery-1.jpg" alt="gallery image 1" class="gallery__content-image">
+        <img data-fancybox="gallery" src="./images/gallery-2.jpg" alt="gallery image 2" class="gallery__content-image">
+        <img data-fancybox="gallery" src="./images/gallery-3.jpg" alt="gallery image 3" class="gallery__content-image">
+        <img data-fancybox="gallery" src="./images/gallery-4.jpg" alt="gallery image 4" class="gallery__content-image">
+        <img data-fancybox="gallery" src="./images/gallery-5.jpg" alt="gallery image 5" class="gallery__content-image">
+        <img data-fancybox="gallery" src="./images/gallery-6.jpg" alt="gallery image 6" class="gallery__content-image">
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="container mx-auto px-4  border-b border-solid border-blue-300 mb-10">
-      <a href="#header" class="footer__logo-link">
-        <img src="./images/logo.svg" alt="footer logo image" class="footer__logo-image mx-auto mt-12 mb-5">
-      </a>
-      <p class="footer__text text-gray-500 text-center w-80 mx-auto pb-12">It is a long established fact that a reader will be distracted by the readable</p>
+    <div class="container">
+      <div class="footer__content">
+        <a href="#header" class="footer__logo-link">
+          <img src="./images/logo.svg" alt="footer logo image" class="footer__logo-image">
+        </a>
+        <p class="footer__text text-gray-500 text-center w-80 mx-auto pb-12">It is a long established fact that a reader
+          will be distracted by the readable</p>
+      </div>
     </div>
   </footer>
 
+  <div class="popup" id="dialog-content" style="display:none;max-width:500px;">
+    <h2>Hey! We are glad to see you.</h2>
+    <p style="margin-top:20px">
+      If you want to know more about us, you can write to test@gmail.com
+    </p>
+  </div>
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="js/slick.min.js"></script>
-  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
   <script src="js/main.js"></script>
 </body>
 
